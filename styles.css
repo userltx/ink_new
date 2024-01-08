@@ -1203,6 +1203,7 @@ letter-spacing: 0em;
     }
     .re-buttons_mobile {
         display: block;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 360px) {
