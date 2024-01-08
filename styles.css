@@ -511,7 +511,7 @@ letter-spacing: 0em;
 text-align: left;
 color: #2C2D35;
 }
-.reproduction_buttons {
+.reproduction_buttons, .reproduction_button {
     display: flex;
     
 }
@@ -614,6 +614,9 @@ transition: 0.2s;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     column-gap: 30px;
+}
+.re-buttons_mobile {
+    display:none;
 }
 /*Reproduction style end*/
 /*Authors style start*/
@@ -1137,11 +1140,11 @@ letter-spacing: 0em;
     .picture_card {
         margin: 0 auto;
     }
-    .reproduction_buttons {
+    .reproduction_button {
         overflow: scroll;
         padding-left: 39px;
     }
-    .reproduction_buttons::-webkit-scrollbar {
+    .reproduction_button::-webkit-scrollbar {
         width: 0;
       }
     .footer_left_nav {
@@ -1195,12 +1198,18 @@ letter-spacing: 0em;
     .team_photos {
         justify-content: space-between;
     }
+    .reproduction_buttons {
+        display: none;
+    }
+    .re-buttons_mobile {
+        display: block;
+    }
 }
 @media screen and (max-width: 360px) {
     .wrapper, .wrapper_bg {
         padding: 0px 15px;
     }
-    .reproduction_buttons {
+    .reproduction_button {
         padding-left: 15px;
     }
 }
