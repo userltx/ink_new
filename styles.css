@@ -991,6 +991,8 @@ letter-spacing: 0em;
 text-align: left;
     }
     .authors {
+        background: url(../img/author_back.png) no-repeat center;
+        background-size: cover;
         margin-bottom: 50px;
     }
     .authors_button {
