@@ -494,6 +494,23 @@ transition: 0.2s;
 }
 /*Begin style end*/
 /*Reproduction style start*/
+.pictures {
+    animation: pic-anim .5s ease-in;
+}
+@keyframes pic-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#germany_pic {
+    display: none;
+}
+#english_pic {
+    display:none;
+}
 .reproduction {
     margin-bottom: 70px;
 }
@@ -545,6 +562,8 @@ transition: 0.2s;
     background-color: #E1EDE6;
     padding: 20px 20px 30px 20px;
     max-width: 350px;
+    height: 100%;
+    position: relative;
 }
 .card_author_text {
 font-size: 18px;
@@ -571,6 +590,9 @@ color: #86928B;
 .card-title {
     margin-bottom: 8px;
 }
+.card-price {
+    margin-bottom: 100px;
+}
 .card-subtitle-text {
 font-size: 18px;
 font-weight: 500;
@@ -590,12 +612,14 @@ letter-spacing: 0em;
 text-align: left;
 color: #598D66;
 }
-.card-price {
-    margin-bottom: 20px;
-}
 .card-button {
-    width: 100%;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    margin: 0 auto;
+    width: calc(100% - 40px);
     padding: 21px 0px;
+    margin-bottom: auto;
 font-size: 20px;
 font-weight: 500;
 line-height: 23px;
@@ -1064,8 +1088,53 @@ text-align: left;
     .header_ink {
         background-color: white;
     }
-    .header_nav {
+    .header_nav-div {
         display: none;
+    }
+    .header_ul:last-child {
+        display:none;
+    }
+    .header_nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 39px;
+    }
+    .x{
+        position: relative;
+    }
+    .line_x {
+        width: 25px;
+        height: 2px;
+        border: 1px solid #2C2D35;
+        transform: rotateX(45deg);
+    }
+    .line_x:first-child {
+        position: absolute;
+        top: -28px;
+        left: 38px;
+        transform: rotate(45deg);
+    }
+    .line_x:last-child {
+        position: absolute;
+        left: 38px;
+        top: -28px;
+        transform: rotate(-45deg);
+    }
+    .header_nav {
+        padding-top: 20px;
+        background-color: #E1EDE6;
+    }
+    .menu_burger {
+        background-color: #E1EDE6;
+        position: inline;
+        display: none;
+        z-index: 999;
+    }
+    .header_ul {
+        margin-bottom: 50px;
+    }
+    .header_ul:nth-child(3) {
+        margin-bottom: 30px;
     }
     .line_header {
         background: #E1EDE6;

@@ -23,20 +23,21 @@
         </div>
         </div>   
         <div class="line_header"></div>
+        <div class="header_nav-div">
         <nav class="header_nav">
             <ul class="header_ul">
                 <li class="header_li">
-                    <a href="#" class="header_nav_text">Репродукция</a>
+                    <a href="#re_to_scroll" class="header_nav_text" id="Re_scroll">Репродукция</a>
                 </li>
             </ul>
             <ul class="header_ul">
                 <li class="header_li">
-                    <a href="#" class="header_nav_text">Новинки</a>
+                    <a href="#new-to-scroll" class="header_nav_text">Новинки</a>
                 </li>
             </ul>
             <ul class="header_ul">
                 <li class="header_li">
-                    <a href="#" class="header_nav_text">О нас</a>
+                    <a href="#team_to_scroll" class="header_nav_text">О нас</a>
                 </li>
             </ul>
             <ul class="header_ul">
@@ -45,12 +46,13 @@
                 </li>
             </ul>
         </nav>
+    </div>
     </div>  
     </div>
 <div class="burger_section">
         <div class="wrapper_bg">
             <div class="header_burger">
-        <div class="burger">
+        <div class="burger" id = "burger-id">
         <span class="line_bg"></span>
         <span class="line_bg"></span>
         <span class="line_bg"></span>
@@ -59,6 +61,34 @@
         <a href="#" class="header_nav_text"><img src="img/shop_ink.svg" alt="shop" class="shop_logo"></a>
     </div>
     </div>
+</div>
+<div class="menu_burger">
+    <div class="x">
+        <span class="line_x"></span>
+        <span class="line_x"></span>
+    </div>
+    <nav class="header_nav">
+        <ul class="header_ul">
+            <li class="header_li">
+                <a href="#re_to_scroll" class="header_nav_text" id="Re_scroll">Репродукция</a>
+            </li>
+        </ul>
+        <ul class="header_ul">
+            <li class="header_li">
+                <a href="#new-to-scroll" class="header_nav_text">Новинки</a>
+            </li>
+        </ul>
+        <ul class="header_ul">
+            <li class="header_li">
+                <a href="#team_to_scroll" class="header_nav_text">О нас</a>
+            </li>
+        </ul>
+        <ul class="header_ul">
+            <li class="header_li">
+                <a href="#" class="header_nav_text"><img src="img/shop_ink.svg" alt="shop" class="shop_logo"></a>
+            </li>
+        </ul>
+    </nav>
 </div>
 </div>
 </header>
@@ -84,7 +114,7 @@
     </div>
     <!--Begin End-->
     <!--Reproduction Start-->
-    <div class="reproduction">
+    <div class="reproduction" id = "re_to_scroll">
         <div class="wrapper">
             <div class="line">
                 <div class="line-title">
@@ -105,7 +135,7 @@
     </div>
 </div>
             <div class="wrapper">
-            <div class="pictures">
+            <div class="pictures" id = "french_pic">
                 <div class="picture_card">
                     <div class="card_img"><img src="img/french_01.png" alt="F01" class="card_img_pic"></div>
                     <div class="card_author"><p class="card_author_text">Марсель Руссо</p></div>
@@ -155,11 +185,111 @@
                     <button class="card-button">В корзину</button>
                 </div>
             </div>
+            <div class="pictures" id = "germany_pic">
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/gone.png" alt="G01" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Курт Вернер</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Над городом</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Цветная литография (40х60) </p></div>
+                    <div class="card-price"><p class="card-price-text">16 000 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/gtwo.png" alt="G02" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Макс Рихтер</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Птенцы</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Холст, масло (50х80) </p></div>
+                    <div class="card-price"><p class="card-price-text">14 500 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/gthree.png" alt="G03" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Мартин Майер</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Среди листьев</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Цветная литография (40х60)</p></div>
+                    <div class="card-price"><p class="card-price-text">20 000 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/gfour.png" alt="G04" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Герман Беккер</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Яркая птица</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Цветная литография (40х60) </p></div>
+                    <div class="card-price"><p class="card-price-text">13 000 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/gfive.png" alt="G05" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Вульф Бауэр</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Дятлы</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Бумага, акрил (50х80) </p></div>
+                    <div class="card-price"><p class="card-price-text">20 000 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/gsix.png" alt="G06" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Вальтер Хартманн</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Большие воды</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Бумага, акрил (50х80) </p></div>
+                    <div class="card-price"><p class="card-price-text">23 000 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+            </div>
+            <div class="pictures" id = "english_pic">
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/eone.png" alt="E01" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Пол Смит</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Дикий зверь</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Акварель, бумага (50х80)</p></div>
+                    <div class="card-price"><p class="card-price-text">19 500 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/etwo.png" alt="E02" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Джон Уайт</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Скалистый берег</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Цветная литография (40х60)</p></div>
+                    <div class="card-price"><p class="card-price-text">17 500 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/ethree.png" alt="E03" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Джим Уотсон</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Река и горы</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Акварель, бумага (50х80) </p></div>
+                    <div class="card-price"><p class="card-price-text">20 500 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/efour.png" alt="E04" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Юджин Зиллион</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Белый попугай</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Цветная литография (40х60)</p></div>
+                    <div class="card-price"><p class="card-price-text">15 500 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/efive.png" alt="E05" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Эрик Гиллман</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Ночная рыба</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Бумага, акрил (50х80)</p></div>
+                    <div class="card-price"><p class="card-price-text">12 500 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+                <div class="picture_card">
+                    <div class="card_img"><img src="img/esix.png" alt="E06" class="card_img_pic"></div>
+                    <div class="card_author"><p class="card_author_text">Альфред Барр</p></div>
+                    <div class="card-title"><h2 class="card-title-text">Рыжий кот</h2></div>
+                    <div class="card-subtitle"><p class="card-subtitle-text">Цветная литография (40х60)</p></div>
+                    <div class="card-price"><p class="card-price-text">21 000 руб</p></div>
+                    <button class="card-button">В корзину</button>
+                </div>
+            </div>
         </div>
     </div>
     <!--Reproduction End-->
     <!--Authors start-->
-    <div class="authors">
+    <div class="authors" id = "new-to-scroll">
         <div class="wrapper">
             <div class="authors_text">
                 <div class="authors_back"></div>
@@ -179,7 +309,7 @@
     </div>
     <!--Authors End-->
     <!--Team Start-->
-    <div class="team">
+    <div class="team" id = "team_to_scroll">
         <div class="wrapper">
             <div class="team_flex">
                 <div class="team_pic">
@@ -298,5 +428,6 @@
     </div>
 </footer>
 <!--Footer End-->
+<script src="script.js"></script>
 </body>
 </html>
