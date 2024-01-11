@@ -422,6 +422,9 @@ font-weight: 500;
 line-height: 23px;
 transition: 0.2s;
 }
+.header_nav-div {
+    max-height: 25px;
+}
 .header_nav_text:hover, .header_nav_text:active, .header_nav_text:focus {
     opacity: .75;
 }
@@ -1120,7 +1123,8 @@ text-align: left;
         top: -28px;
         transform: rotate(-45deg);
     }
-    .header_nav {
+    #header_nav_first {
+        display: none;
         padding-top: 20px;
         background-color: #E1EDE6;
     }
