@@ -11,4 +11,6 @@ app.get('/', (req,res) => {
     res.sendFile(__dirname + '/index.html');
 });
 http.createServer(app).listen(8000);
-https.createServer(options, app).listen(443);
+https.createServer(options, app).listen(443, () => {
+    console.log('Server is running on port 443');
+});
